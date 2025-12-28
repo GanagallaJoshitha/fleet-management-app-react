@@ -15,7 +15,10 @@ function AddVehicle({addVehicle}){
     };
     return(
         <form onSubmit={handleSubmit}>
-            <input</input>
+            <input type = "text" placeholder="Vehicle Number" value = {vehicleNo} onChange={(e) => setVehicleNo(e.target.value)} required/>
+            <input type = "text" placeholder="Vehicle Type" value = {type} onChange={(e) => setType(e.target.value)} required/>
+            <button> Add Vehicle</button>
         </form>
-    )
+    );
 }
+export default AddVehicle;
