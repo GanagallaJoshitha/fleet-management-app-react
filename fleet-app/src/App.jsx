@@ -12,7 +12,12 @@ function App(){
   };
   return(
     <div className="container">
-      <h1> Fleet Management System</h1>
+      <h1>Fleet Management System</h1>
+      <AddVehicle addVehicle = {addVehicle}/>
+      <VehicleList vehicles = {vehicles}
+      deleteVehicle={deleteVehicle}/>
     </div>
-  )
+  );
 }
+
+export default App;
